@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!--                              -->
+    <!-- 課題　じゃんけんアプリリッチver -->
+    <!-- 新しいことにチャレンジするぞ！プログラム -->
+    <!-- 2023/5/31                    -->
+    <!-- T66_新宮 良太                 -->
+    <!--                              -->
+    <!-- 写真は、PhotoACのフリー素材、パクサト、フリー素材.comを利用しています。商用利用不可などいくつか禁止事項があり、今回私個人での利用までといたします。 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="新しいことにチャレンジする人を応援するサイト">
+    <title>（課題）janken_App_rich(ver) </title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+
+    <!-- トップ戻るボタン用 -->
+<div id="page_top"><a href="#"></a></div>
+
+<!--------------- ヘッダー -------------->
+<header class="page-header page-header2">
+    <a href="index.html"></a><img class="logo" src="./image/challeng_logo.jpg" alt="チャレンジロゴ"></a>
+    <img class="moji1" src="./image/moji1.jpg" alt="新しいことにチャレンジするぞ文字">
+    <nav>
+    <ul class="main-nav">
+        <li><a href="#oshirase">お知らせ</a></li>
+        <li><a href="#challenge">チャレンジ宣言</a></li>       
+        <li><a href="#minna">みんなのページ</a></li>
+        <li><a href="#mypage">マイページ</a></li>
+        <li><a href="#otoiawase">お問合わせ</a></li>
+    </ul>
+    </nav>
+</header>
+
+<!-- ヘッダー背景画像エリア -->
+<div class="box1">
+    <p class="haikei">
+        <img src="./image/haikei1.jpg" alt="">
+    </p>
+    <div class="letter0">
+        <div class="letter2"><p>君も新しいことにチャレンジしてみないか？</p></div>
+        <p class="letter3">さあ、最初の一歩を踏みだそう！</p>
+    </div>
+</div>
+
+<!-- ２段目（カウンター数） -->
+    <ul class="kakucaunter">
+        <li>
+            <div id="genzai">
+                <span id="counterLabel">現在挑戦中のチャレンジャー:</span>
+                <span id="counterValue1"></span>
+            </div>
+        </li>
+        <li>
+            <div id="genzai">
+                <span id="counterLabel">これまでのチャレンジ達成者数:</span>
+                <span id="counterValue2"></span>
+            </div>
+            <div id="genzai">
+                <span id="counterLabel">残念ながら今回は達成しなかった人:</span>
+                <span id="counterValue3"></span>
+            </div>
+        </li>
+    </ul>
+
+<!---------- チャレンジ宣言 エリア ---------->
+<div id="challenge"><p>challeng宣言</p></div>
+
+<div class="c-question">
+    <p class="c1">チャレンジする内容は決まりましたか？</p><br>
+    <ul class="c-button">
+        <button class="button-yes">はい</button>
+        <button class="button-no">いいえ</button>
+        <button class="button-noidea">何をしたらいいのか思い浮かびません！</button>
+    </ul> 
+</div>
+
+<!--「はい」を押したとき  -->
+<div class="title_waku"> 
+    <div class="title-m"></div>
+    <br></br>
+    <div class="title">
+        <textarea rows="2" cols="60" placeholder="(３０文字以内で)"></textarea>
+    </div>
+</div>
+
+<!-- ランダムにチャレンジ内容を表示してみよう -->
+<div class="randam_waku">
+    <div class="bouken"></div>
+    <button class="button-random">冒険への旅</button>
+</div>
+
+<!-- ランダムに表示された新しいプラン -->
+<div class="new_plan"></A></div>
+<div class="new_1"></A></div>
+    <script src="./js/script.js">  </script>  <!--.JSを紐付ける-->
+
+<p class="ps_memo">現在、まだまだ作成中です</p>
+
+<!--------------------- 効果音 ------------------>
+<audio id="clapSound1" src="./sound/clap.mp3"></audio>
+
+</body>
+</html>

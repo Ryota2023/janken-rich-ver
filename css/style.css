@@ -1,0 +1,247 @@
+/* ==トップに戻るボタン用 == */
+@charset "UTF-8";
+
+/* 共通部分 */
+html { 
+    font-size: 100%;
+    scroll-behavior: smooth; /*スムーズにスクロールさせる　*/
+}
+img { max-width: 100%;}
+a { text-decoration: none;}
+img { max-width: 100%;}
+body { width: 1100px;}
+
+/* ==トップに戻るボタン用 == */
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #3f98ef;
+    opacity: 0.6;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    }
+
+    /* カーソルがリンクの上に来ると色を変える */
+a:hover{color: yellowgreen;}
+
+
+/*=== ヘッダー：画像とメニューを横並びにする ===*/
+.logo { 
+    margin-top: 10px;
+    margin-bottom:10px; 
+    width: 120px;
+}
+
+.moji1{
+    margin-top: 50px;
+    width: 180px;
+    height:40px;
+}
+
+/* メニューを均等に横並びにする */
+.main-nav li{ margin-left: 50px;}
+
+.main-nav {
+display: flex;
+    font-size: 1.0 rem;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;}
+
+.page-header2 {
+    max-width: 1100px;
+    margin: 0% auto;
+    padding: 0 3%;}
+
+
+/*=== 背景画像の上に文字をのせる ===*/
+.box1 {
+    position: relative;
+    margin-bottom: 20px;
+}
+.haikei{
+    zoom: 110%;
+}
+.letter0 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.letter2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    /* font-style: italic; */
+    /* text-align: center;   */
+}
+
+.letter3 {
+    color: rgb(5, 84, 195);
+    font-size: 30px;
+    /* font-style: italic; */
+    transform: skewX(-20deg);  /*文字を斜めに*/
+    font-weight: bold;
+    line-height: 85px;
+    text-align: center;
+ }
+
+/* ２段目メイン（各カウンター数） */
+#genzai {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#counterValue1 {        /*現在のチャレンジャー  */
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bolder;
+    color: blue;
+    animation: blink-slow 1s linear infinite;
+}
+
+@keyframes blink-slow {     /* 文字をゆっくり点滅させる */
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+#counterValue2 {        /*チャレンジ達成者  */
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bolder;
+    color: blue;
+    }
+
+#counterValue3 {        /*今回は達成しなかった人  */
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bolder;
+    color: green;
+    }
+
+.kakucaunter{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* ----------- チャレンジ宣言　エリア ------------  */
+#challenge {
+    text-align: center;
+    padding-top: 60px;
+    font-size: 30px;
+    font-family: Arial Black;
+    color: orange;
+    margin-bottom: 35px; 
+}
+
+/* はい、いいえのボタン */
+.c-question{
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+.button-yes,.button-no,.button-noidea{
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px 10px;
+    background-color: rgba(251, 255, 132, 0.769);
+    border: solid 2px rgba(8, 206, 157, 0.769);
+    border-radius: 5px;
+}
+
+/* カーソルがボタンの上にくると色を変える */
+.button-yes:hover {
+    background-color: rgb(13, 230, 13);
+    }
+.button-no:hover {
+    background-color: rgb(13, 230, 13);
+    }
+ .button-noidea:hover {
+    background-color: rgb(13, 230, 13);
+    }
+
+.c-button{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.title_waku{
+    text-align: center;
+    margin-bottom:30px;
+}
+
+.randam_waku{
+    /* display: inline-block; */
+    max-width:400px;
+    margin:0 auto;
+    text-align: center;
+}
+.bouken{
+    margin-bottom: 20px;
+}
+
+.button-random{
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px 10px;
+    background-color: rgba(251, 255, 132, 0.769);
+    border: solid 2px rgb(197, 192, 168);
+    border-radius: 5px;
+    animation: blink-slow 1s linear infinite;
+    margin-bottom: 20px;
+}
+.button-random:hover {
+    background-color: rgb(13, 230, 13);
+    }
+
+/* ランダムに表示された新しいプラン */
+.new_plan{
+    font-size: 30px;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+.new_1{
+    text-align: center; 
+    margin-bottom: 150px; 
+}
+
+.ps_memo{
+    text-align: center; 
+}
+
